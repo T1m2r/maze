@@ -32,6 +32,18 @@ class Player(GameSprite):
         if (keys[K_DOWN] or keys[K_s])and self.rect.y < win_height -80:
             self.rect.y += self.speed
 
+
+
+
+
+
+
+
+
+
+
+
+
 #класс-наследник для спрайта-врага (перемещается сам)
 class Enemy(GameSprite):
     side = "left"
@@ -145,7 +157,7 @@ while game:
         
         packman.update()
         monster.update()
-        
+        #sdagsfdgsfdg
         packman.reset()
         monster.reset()
         final.reset() 
@@ -158,7 +170,7 @@ while game:
         w6.draw_wall()
         w7.draw_wall()
         
-        #Ситуация "Проигрыш"
+        #Ситуация "Проигрыш" asdfsdfasdfasdfasdf
         if (sprite.collide_rect(packman, monster) or 
         sprite.collide_rect(packman, w1) or 
         sprite.collide_rect(packman, w2) or 
